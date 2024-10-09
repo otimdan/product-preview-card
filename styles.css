@@ -1,0 +1,122 @@
+/* Family: [Montserrat] */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Family: [Fraunces] */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  /* Primary colors */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  /* Neutral colors */
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 14px;
+  background-color: var(--cream);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  width: 600px;
+  height: 400px;
+  background: var(--white);
+  border-radius: 15px;
+}
+
+.card-body {
+  padding: 16px;
+  margin: 0;
+}
+
+.card-body h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.card-body h3 {
+  letter-spacing: 5px;
+  font-weight: 200;
+}
+
+.card-body p {
+  font-weight: 300;
+}
+
+.card-image {
+  width: 600px;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("./images/image-product-desktop.jpg");
+  background-size: cover;
+  border-radius: 15px 0 0 15px;
+  /* background-repeat: no-repeat; */
+}
+img {
+  width: 300px;
+  max-height: 100%;
+  object-fit: fill;
+  border-radius: 15px 0 0 15px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices {
+  display: flex;
+  margin-top: 20px;
+}
+
+.cur-price {
+  color: var(--dark-cyan);
+  font-size: larger;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.prev-price {
+  text-decoration: line-through;
+  font-size: 12px;
+  margin-left: 24px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+button {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 10px 35px 10px 35px;
+  width: 250px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 24px;
+}
+
+/* @media screen and (max-width: 375px) {
+  .card {
+    width: 350px;
+  }
+
+  .card-image {
+    width: 150px;
+  }
+} */
